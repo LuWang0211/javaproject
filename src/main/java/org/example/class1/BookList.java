@@ -15,7 +15,7 @@ public class BookList {
         size = 5;
     }
 
-    public Integer getSize() {
+    public int getSize() {
         return size;
     }
 

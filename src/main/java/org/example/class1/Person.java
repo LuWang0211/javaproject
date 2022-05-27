@@ -7,6 +7,8 @@ abstract class Person {
     public String gender;
     public String status;
 
+    public Operation[] operation;
+
     public Person (String name, String gender, String status) {
         this.name = name;
         this.gender= gender;
@@ -37,6 +39,13 @@ abstract class Person {
 
     public void setstatus(String status) {
         this.status =  status;
+    }
+
+    // library menu
+    abstract public int menu();
+
+    public void doOperation(int option, BookList bookList) {
+        operation[option].operationBook(bookList);
     }
 
 }
